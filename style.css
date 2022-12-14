@@ -1,6 +1,4 @@
-   body{
-    margin:0;
-   }
+
    .maincontent {  
         display: grid;
         grid-template-columns: 1fr;
@@ -163,9 +161,10 @@ text-align: justify;
     .maincontent {  
         display: flex;
         flex-direction: row-reverse;
+        flex-basis: auto;
     }
 
-    .textmain{width: 70%;}
+    .textmain{width: 50%;flex-basis: auto;}
     .ssfont{
         font-size: 14px;}
       h1{
@@ -187,8 +186,29 @@ text-align: justify;
    #material-icons{
         font-size: 15px;
     }
+    .all{
+        border: solid 1px #dddddd;
+        margin-left: 25px;
+        padding-left: 25px;
+        margin-right: 25px;
+        padding-right: 25px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .IDmain{
+        margin-left: 5%;
+        margin-right: 5%;
+        border: solid 1px #dddddd;
+        flex-basis: auto;
+        }
 }
-
+.interlinks{
+    border: solid 1px #dddddd;
+    margin-left: 25px;
+    padding-left: 25px;
+    margin-right: 25px;
+    padding-right: 25px;
+}
 
 /*------------------------------------------Nav bar--------------------------
 .topnav {
