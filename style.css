@@ -164,7 +164,8 @@ text-align: justify;
         display: flex;
         flex-direction: row-reverse;
     }
-    
+
+    .textmain{width: 70%;}
     .ssfont{
         font-size: 14px;}
       h1{
