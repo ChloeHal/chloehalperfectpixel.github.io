@@ -9,10 +9,25 @@
         <link rel="icon" type="image/x-icon" href="Fichier 1.svg">        
         <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet'>
                 <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
-        <title>CV</title>
+        <title>Jim</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
 <body>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Britanica</a>
+        <a href="#news"><span class="material-icons">
+            menu
+            </span>Browse</a>
+        <a href="#contact"><span class="material-icons">
+            search
+            </span>Search</a>
+        <a href="#about">Dictionary</a>
+        <a href="#about">Quiz</a>
+        <a href="#about">Money</a>
+
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
 <section class="interlinks">
     <p class="ssfont"><a href="#"> Home </a>><a href="#"> Science </a> > <a href="#"> Mathématics</a></p>
 <section class="all">
@@ -31,9 +46,9 @@
       </div>
 
 
-<div class="maincontent">
+<div class="maincontent" id="maincontent">
     <div class="IDmain">
-        <div class="Photo"><img src="tim.jpg"></div>
+        <div class="Photo"><img src="tim.png"></div>
         <div class="descriid">
         <div class="nomphoto"><p class="ssfont">Tim Berners-Lee</p></div>
         <div class="liennomphoto">See all media</div><hr>
@@ -56,5 +71,15 @@
 
 </section>
 </section>
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
 </body>
 </html>
