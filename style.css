@@ -1,3 +1,6 @@
+   body{
+    margin:0;
+   }
    .maincontent {  
         display: grid;
         grid-template-columns: 1fr;
@@ -20,16 +23,16 @@ align-items: start;
     
       
     .ssfont{
-        font-size: 14px;
+        font-size: 20px;
         font-family: sans-serif;  }
       h1{
-    font-size: 31.25px;
+    font-size: 37.25px;
     font-style: bold;
     margin-bottom: 10px;
     margin-top: 25px ;
       }
       h2{
-        font-size: 20px;
+        font-size: 26px;
         font-weight: normal;
         margin-top: 7px;
     
@@ -37,7 +40,7 @@ align-items: start;
       h3{
     color: #b7b7b7;
     font-style: italic;
-    font-size:12px;
+    font-size:18px;
     margin-bottom: 0;
     
       }
@@ -93,7 +96,7 @@ align-items: start;
         font-weight: bold;
         font-family: sans-serif;
         margin-right: 15px;
-    font-size: 12.80px;
+    font-size: 16.80px;
     }
     hr {
         border: solid 1px #dddddd;
@@ -105,7 +108,7 @@ align-items: start;
     }
     .ID{text-align: justify;}
     .description{
-        font-size: 18px;
+        font-size: 24px;
         text-align: justify;
         margin-left: 15px;
         margin-right: 15px;
@@ -113,7 +116,7 @@ align-items: start;
     }
    #material-icons{
         color: #12439c;
-        font-size: 15px;
+        font-size: 21px;
         vertical-align: text-top;
     }
 
@@ -123,7 +126,7 @@ a{
 
   }
 
-/*_________________________________________Responsive body______________________________________________________________________*/
+/*_________________________________________Responsive body___________________________________________________________*/
 /* @media only screen and (min-width:798px){
     .maincontent {  
     display: grid;
@@ -161,15 +164,35 @@ text-align: justify;
         display: flex;
         flex-direction: row-reverse;
     }
- }
+    .ssfont{
+        font-size: 14px;
+      h1{
+    font-size: 31.25px;
+    
+      h2{
+        font-size: 20px;
+      }
+      h3{
+    font-size:12px;    
+      }
+     
+    .liennomphoto{
+    font-size: 12.80px;
+    }
+   
+    .description{
+        font-size: 18px;
+    }
+   #material-icons{
+        font-size: 15px;
+    }
+}
 
 
 /*------------------------------------------Nav bar-------------------------------*/
 .topnav {
     overflow: hidden;
-    background-color: #12439c;
-    vertical-align: text-top;
-
+    background-color: #333;
   }
   
   .topnav a {
@@ -180,26 +203,17 @@ text-align: justify;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    vertical-align: text-top;
-
   }
   
   .active {
-    background-color: #12439c;
+    background-color: #04AA6D;
     color: white;
-    
   }
   
   .topnav .icon {
     display: none;
-    vertical-align: text-top;
-
+  
   }
-  
-  
-  
- 
-  
   
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child), .dropdown .dropbtn {
@@ -223,5 +237,12 @@ text-align: justify;
       display: block;
       text-align: left;
     }
-  
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
   
