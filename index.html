@@ -12,8 +12,18 @@
         <title>Jim</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
+    <body>
 
-<body>
+    <div class="topnav" id="myTopnav">
+        <a href="#Britannica" class="active"><span id="material-white" class="material-icons">yard</span>Britannica</a>
+        <a href="#Browse"><span id="material-white" class="material-icons">menu</span>Browse</a>
+        <a href="#Search"><span id="material-white" class="material-icons">search</span>Search</a>
+        <a href="#about">Dictionnaty</a>
+        <a href="#Quizzes">Quizzes</a>
+        <a href="#Money">Money</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+    
 
 <section class="interlinks">
     <p class="ssfont"><a href="#"> Home </a>><a href="#"> Science </a> > <a href="#"> Mathématics</a></p>
@@ -58,6 +68,15 @@
 
 </section>
 </section>
-
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
 </body>
 </html>
