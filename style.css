@@ -1,4 +1,5 @@
 
+  
    .maincontent {  
         display: grid;
         grid-template-columns: 1fr;
@@ -158,8 +159,10 @@ text-align: justify;
 
 
  @media only screen and (min-width:768px) {
-    .maincontent {  
-        display: flex;
+  
+
+  .maincontent {  
+        display:inline-flex;
         flex-direction: row-reverse;
         flex-basis: auto;
     }
@@ -196,10 +199,12 @@ text-align: justify;
         margin-right: 20px;
       }
       .IDmain{
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 10px;
+        margin-right: 10px;
         border: solid 1px #dddddd;
-        flex-basis: auto;
+        display: inline;
+        max-width:1200px;
+	min-width:17rem;
         }
 }
 .interlinks{
